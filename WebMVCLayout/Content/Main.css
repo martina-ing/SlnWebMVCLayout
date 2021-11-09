@@ -1,0 +1,33 @@
+﻿body {
+}
+
+#header {
+    background-color:aquamarine;
+    color:black;
+    padding: 10px;
+}
+
+#menu {
+
+    background-color:antiquewhite;
+
+}
+
+#sidebar {
+    background-color:coral;
+    margin 10px;
+    color :darkblue;
+    padding: 10px;
+    float:right;
+    border: double 2px lightcyan;
+}
+
+#content {
+}
+
+#footer {
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    clear: both;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <h1>Banner o nombre del sistema</h1>
+    </div>
+    <div id="menu">
+        @Html.ActionLink("Inicio", "Index", "Home")
+        @Html.ActionLink("Productos", "Index", "Producto")
+        @Html.ActionLink("Categorias", "Index", "Categoria")
+    </div>
+
+    <div id="sidebar">
+
+        @if (IsSectionDefined("SideBar"))
+        {
+            @RenderSection("SideBar")
+        }
+        else
+        { 
+            <h2>Zona sidebar</h2>
+        }
+                
+    </div>
+
+
+    <div id="content">
+        @RenderBody()
+    </div>
+
+    <div id="footer">
+        <p>email@sistem.com</p>
+    </div>
+
+</body>
+</html>
